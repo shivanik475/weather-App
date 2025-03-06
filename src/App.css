@@ -1,72 +1,92 @@
 .container {
-  width: 380px;
-  margin: auto;
+  max-width: 380px;
+  margin: 33px auto;
   padding: 12px;
   background-color: #fff;
-  margin-top: 33px;
   border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .inputs {
   display: flex;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
   margin-top: 18px;
 }
 
 input {
-  width: 70%;
+  width: 100%;
+  max-width: 250px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 21px;
-  border: none;
-  background-color: rgb(171, 231, 255);
-  box-shadow: 0px 3px 2px rgb(218, 218, 218);
+  border: 1px solid #ccc;
+  background-color: rgb(225, 239, 245);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
 .inputs img {
-  background-color: rgb(225 239 245);
-  color: white;
+  background-color: rgb(171, 231, 255);
   width: 44px;
-  border-radius: 55px;
+  height: 44px;
+  border-radius: 50%;
   border: none;
-  box-shadow: 0px 3px 2px rgb(218, 218, 218);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   font-size: 18px;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.inputs img:hover {
+  background-color: rgb(140, 211, 245);
 }
 
 .weathers {
   text-align: center;
-  background-color: rgb(225 239 245);
+  background-color: rgb(225, 239, 245);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
 }
 
 .weathers img {
-  width: 190px;
-  margin-top: -11px;
+  width: 150px;
+  margin-top: -5px;
 }
 
 .weathers p {
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 5px 0;
 }
 
 .weathers .climate {
-  margin-top: -29px;
+  margin-top: -10px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .weathers .cityName {
-  font-size: 30px;
-  margin-top: 36px;
+  font-size: 28px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .weathers .temprature {
-  font-size: 54px;
-  margin-top: -12px;
+  font-size: 48px;
+  margin-top: -5px;
+  font-weight: bold;
+  color: #333;
 }
 
 .error {
   text-align: center;
+  color: red;
+  margin-top: 15px;
 }
 
 .error p {
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: bold;
 }
